@@ -18,7 +18,6 @@ body {
 
 #control {
   padding: 1em 10em;
-  /* margin: 10em 4em; */
   margin-left: auto;
   margin-right: auto;
   background-color: antiquewhite;
@@ -29,16 +28,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  /* grid-template-columns: 1fr 4fr 3fr 4fr 8fr 3fr; */
-  /* justify-items: center; */
-  /* align-items: center; */
-  /* gap: 0.5em; */
 }
 
 #btnFilter {
   display: inline-block;
-  /* width: 30em; */
-  /* height: 3em; */
   font-size: 1.5em;
 }
 
@@ -48,10 +41,8 @@ body {
 }
 
 .title {
-  /* background-color: rgb(129, 129, 129); */
   text-align: center;
   padding: 1em;
-  /* margin: 1em; */
   font-size: 1.2em;
   text-transform: uppercase;
   border-radius: 0.5em;
@@ -59,6 +50,7 @@ body {
 
 .idCard {
   text-align: center;
+  /* justify-content: space-around; */
   margin: 1em;
   padding: 1em;
   border-radius: 0.5em;
