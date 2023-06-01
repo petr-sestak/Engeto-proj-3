@@ -18,7 +18,6 @@ body {
 
 #control {
   padding: 1em 10em;
-  /* margin: 10em 4em; */
   margin-left: auto;
   margin-right: auto;
   background-color: antiquewhite;
@@ -26,17 +25,13 @@ body {
 }
 
 #content {
-  display: grid;
-  grid-template-columns: 1fr 4fr 3fr 4fr 8fr 3fr;
-  /* justify-items: center; */
-  align-items: center;
-  gap: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 #btnFilter {
   display: inline-block;
-  /* width: 30em; */
-  /* height: 3em; */
   font-size: 1.5em;
 }
 
@@ -45,45 +40,30 @@ body {
   font-size: 1.5em;
 }
 
-.addrContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.geoContainer {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-}
-
-.gridItem {
-  padding: 0.5em 1em;
-  text-align: center;
-}
-
-.gridItem:nth-child(6n + 2) {
-  font-weight: 700;
-  color: rgb(83, 83, 83);
-}
-
-.addrLeftItem {
-  text-align: right;
-}
-
-.addrRightItem {
-  text-align: left;
-}
-
 .title {
-  /* background-color: rgb(129, 129, 129); */
   text-align: center;
   padding: 1em;
-  /* margin: 1em; */
   font-size: 1.2em;
   text-transform: uppercase;
   border-radius: 0.5em;
 }
 
+.idCard {
+  text-align: center;
+  /* justify-content: space-around; */
+  margin: 1em;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: aliceblue;
+  max-width: 25%;
+  min-width: 20%;
+}
+
+.textItem {
+  padding: 0.2em;
+}
+
 img {
-  height: 100%;
-  width: 100%;
+  height: 5em;
+  width: 5em;
 }

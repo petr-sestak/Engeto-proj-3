@@ -6,9 +6,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Engeto third project</title>
-    <script src="readEngeto.js"></script>
+    <!-- <script type="module" src="js/ReadEngeto.js"></script> -->
   </head>
   <body>
     <div id="body">
@@ -17,11 +17,11 @@
         <input type="text" id="btnFilter" />
       </div>
       <div id="content"></div>
-      <script>
-        const toDisplay = new readEngeto();
-        // toDisplay.printToLog();
+      <script type="module">
+        import { LoadData } from "./js/load.js";
+
+        LoadData("https://jsonplaceholder.typicode.com/users");
       </script>
-      <!-- <script src="add.js"></script> -->
     </div>
   </body>
 </html>
