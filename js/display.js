@@ -3,6 +3,8 @@ export function display() {
   let data = new Array();
   if (localStorage.getItem("dataFetch")) {
     data = JSON.parse(localStorage.getItem("data"));
+  } else {
+    alert("No data in local browser storage!!");
   }
 
   const content = document.getElementById("content");
